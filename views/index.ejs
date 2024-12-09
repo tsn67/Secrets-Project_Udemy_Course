@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secrets!</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    
+
+</head>
+<body>
+
+    <div class="container">
+        <p>Hover me!</p>
+    </div>
+
+    <div class="username-box">
+        <h3><%= data.username %></h3>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        const secret = "<%- data.secret %>";
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
